@@ -43,6 +43,10 @@
         {
           "anchor": "Corto Public API",
           "href": "https://docs.docorto.ai/"
+        },
+        {
+          "anchor": "Corto Help Centre",
+          "href": "https://help.docorto.ai/en/collections/11811763-getting-started"
         }
       ]
     }
@@ -56,7 +60,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:support@docorto.ai"
       }
     ],
     "primary": {
@@ -79,9 +83,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://au.linkedin.com/company/docorto"
     }
   },
   "appearance": {
