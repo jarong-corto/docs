@@ -17,7 +17,8 @@
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "test-accounts"
         ]
       },
       {
@@ -26,6 +27,12 @@
           "auth/apps/frontend",
           "auth/apps/backend",
           "auth/apps/mcp"
+        ]
+      },
+      {
+        "group": "Admin",
+        "pages": [
+          "for-admins"
         ]
       },
       "auth/troubleshooting"
