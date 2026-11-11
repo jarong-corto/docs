@@ -1,16 +1,40 @@
 ---
 title: "Create a frontend app"
 sidebarTitle: "Frontend app"
+description: "Add actions to the Corto interface that open your app."
 ---
 
-Frontend apps that can provide an action as part of the Corto UI
+Frontend apps add actions to the Corto interface. When a user clicks one of your actions, Corto opens the URL you configured for it.
 
-- On creation of a Frontend app, multiple UI components can be rendered and perform actions as part of the configuration.
-- There are two types of UI components currently supported
-  - Firm-level - Visible in the topmost toggle next to Matters and Contacts,
-  - Matter-level - Visible in the header of the chat.
-- On click, they will perform actions to the URLs specified during configuration.
+## Where actions appear
 
-![Image](/images/image-5.png "Image")
+You can add one or more actions to a frontend app. Each action appears in one of two locations:
 
-![Image](/images/image-4.png "Image")
+| Location | Where users see it |
+| --- | --- |
+| Firm level | In the top navigation, next to **Matters** and **Contacts**. |
+| Matter level | In the header of a matter's chat. |
+
+![A firm-level action shown in the Corto top navigation next to Matters and Contacts](/images/image-5.png)
+
+![A matter-level action shown in the chat header of a matter](/images/image-4.png)
+
+## Create a frontend app
+
+<Steps>
+  <Step title="Start a new app">
+    In the Developer Console, go to **My apps** and click **Create new app**.
+  </Step>
+  <Step title="Choose the app type">
+    Select an environment, select **Frontend app**, then click **Create new app**.
+  </Step>
+  <Step title="Add actions">
+    For each action, set its location and the URL it opens.
+  </Step>
+  <Step title="Submit for review">
+    When you're ready, submit the app for review. See the [Quickstart](/quickstart) for the full publishing process.
+  </Step>
+  <Step title="After publishing">
+    After being Approved and publishing via Set Live, use the buttons now present in the UI.
+  </Step>
+</Steps>

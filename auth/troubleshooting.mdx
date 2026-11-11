@@ -1,28 +1,30 @@
 ---
 title: "Troubleshooting"
-description: "Fix common problems with the Authentication app."
+description: "Solutions to common issues in the Corto Developer Console."
 ---
 
-{/* TODO: Replace with real error messages and fixes as support issues come in. */}
+{/* TODO: Add real error messages and fixes as support issues come in. */}
 
 <AccordionGroup>
-  <Accordion title="The Authentication app does not appear in Corto">
-    Check that the app was installed to the correct workspace in the Marketplace, then refresh Corto.
+  <Accordion title="I can't create apps after signing up">
+    New developer accounts must be approved by a Corto admin before you can create apps. If your account has been pending for a while, contact your Corto representative.
   </Accordion>
 
-  <Accordion title="Redirect URI mismatch">
-    The redirect URI in your code must exactly match one listed in the app's settings, including protocol, port, and trailing slash.
+  <Accordion title="My sandbox app doesn't appear in Corto">
+    Check that the user you're testing with is added under [Test accounts](/test-accounts) and already has a Corto, LawY, or AccTivity account.
   </Accordion>
 
-  <Accordion title="Invalid client secret">
-    Confirm you copied the latest secret. If you rotated it, update every environment that uses it.
+  <Accordion title="My changes aren't showing in the live app">
+    Draft changes only apply when you select **Set live**. Make sure your app has been approved, then set it live.
   </Accordion>
 
-  <Accordion title="MCP client cannot complete sign-in">
-    {/* TODO: Add MCP-specific checks. */}
+  <Accordion title="My MCP app isn't available in chat">
+    Users must first connect the app under **Account settings** > **Integrations**, then turn it on in chat under **Toggle features**.
   </Accordion>
 </AccordionGroup>
 
 ## Get help
 
 {/* TODO: Add support contact or channel. */}
+
+Contact the Corto Backend team.
