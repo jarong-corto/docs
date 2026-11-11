@@ -1,69 +1,16 @@
 ---
 title: "Create a frontend app"
 sidebarTitle: "Frontend app"
-description: "Add user sign-in to a browser or mobile app."
 ---
 
-Use a frontend app for code that runs on the user's device, such as a single-page app or mobile app. Frontend apps cannot keep a secret, so they authenticate with a client ID only.
+Frontend apps that can provide an action as part of the Corto UI
 
-## Create the app
+- On creation of a Frontend app, multiple UI components can be rendered and perform actions as part of the configuration.
+- There are two types of UI components currently supported
+  - Firm-level - Visible in the topmost toggle next to Matters and Contacts,
+  - Matter-level - Visible in the header of the chat.
+- On click, they will perform actions to the URLs specified during configuration.
 
-<Steps>
-  <Step title="Open the Authentication app">
-    In Corto, open the Authentication app.
-  </Step>
-  <Step title="Create a new app">
-    Click **Create app** and select **Frontend**.
-  </Step>
-  <Step title="Configure settings">
-    Enter the following:
+![Image](/images/image-5.png "Image")
 
-    | Setting | Description |
-    | --- | --- |
-    | Name | A name to identify the app. |
-    | Redirect URIs | URLs users return to after signing in. |
-    | Logout URIs | URLs users return to after signing out. |
-    | Allowed origins | {/* TODO: confirm whether CORS origins are configured here */} |
-  </Step>
-  <Step title="Save and copy the client ID">
-    Click **Save**, then copy the **Client ID**.
-  </Step>
-</Steps>
-
-## Connect your code
-
-{/* TODO: Replace with the real SDK package and initialization code. */}
-
-<CodeGroup>
-
-```bash npm
-npm install <sdk-package>
-```
-
-```bash yarn
-yarn add <sdk-package>
-```
-
-</CodeGroup>
-
-```javascript
-// TODO: Replace with real SDK usage
-import { createClient } from "<sdk-package>";
-
-const auth = createClient({
-  clientId: "YOUR_CLIENT_ID",
-  redirectUri: "http://localhost:3000/callback",
-});
-
-await auth.signIn();
-```
-
-## Test sign-in
-
-{/* TODO: Describe how to verify the flow end to end. */}
-
-## Next steps
-
-<Card title="Create a backend app" icon="server" href="/auth/apps/backend">
-  Protect the API your frontend calls.
-</Card>
+![Image](/images/image-4.png "Image")

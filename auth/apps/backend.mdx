@@ -1,60 +1,13 @@
 ---
 title: "Create a backend app"
 sidebarTitle: "Backend app"
-description: "Authenticate users and protect APIs from a server-side app."
 ---
 
-Use a backend app for code that runs on a server you control. Backend apps receive a client secret in addition to a client ID.
+Backend apps that allow you to consume the Corto public APIs
 
-<Warning>
-  Never expose your client secret in frontend code, public repositories, or logs.
-</Warning>
-
-## Create the app
-
-<Steps>
-  <Step title="Open the Authentication app">
-    In Corto, open the Authentication app.
-  </Step>
-  <Step title="Create a new app">
-    Click **Create app** and select **Backend**.
-  </Step>
-  <Step title="Configure settings">
-    | Setting | Description |
-    | --- | --- |
-    | Name | A name to identify the app. |
-    | Redirect URIs | URLs users return to after signing in. |
-    | {/* TODO */} | {/* TODO: add any backend-specific settings */} |
-  </Step>
-  <Step title="Save and copy credentials">
-    Click **Save**, then copy the **Client ID** and **Client secret**. Store the secret in an environment variable or secrets manager.
-  </Step>
-</Steps>
-
-## Connect your code
-
-{/* TODO: Replace with real SDK package and server example. */}
-
-```bash
-npm install <server-sdk-package>
-```
-
-```javascript
-// TODO: Replace with real SDK usage
-import { createServerClient } from "<server-sdk-package>";
-
-const auth = createServerClient({
-  clientId: process.env.AUTH_CLIENT_ID,
-  clientSecret: process.env.AUTH_CLIENT_SECRET,
-});
-```
-
-## Protect an API
-
-{/* TODO: Show how to validate incoming tokens and check permissions. */}
-
-## Next steps
-
-<Card title="Manage apps" icon="sliders" href="/auth/manage-apps">
-  Rotate secrets, update settings, and delete apps.
-</Card>
+- On creation of a Backend app, the following will be created:
+  - Client ID
+  - Client Secret
+  - API Key
+- These can be used by your Backend or M2M application to consume Corto public APIs which can be found in the link below
+- [https://docs.docorto.ai/docs/api/72b66de24898e-introduction](https://docs.docorto.ai/docs/api/72b66de24898e-introduction)

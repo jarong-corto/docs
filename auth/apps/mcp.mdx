@@ -1,53 +1,14 @@
 ---
 title: "Create an MCP app"
 sidebarTitle: "MCP app"
-description: "Let AI agents connect to your MCP server on behalf of a signed-in user."
 ---
 
-Use an MCP app to add authentication to a Model Context Protocol (MCP) server. When an AI agent or MCP client connects, the user signs in and approves access before the agent can call your tools.
+MCP Apps that apply their knowledge on the LLM chat.
 
-## Create the app
+- On creation of an MCP app, users will be able to connect to it and use it for the LLM chat.
+- Once installed, a Connect option for the MCP app will appear in the User Settings > Integrations tab.
+- After connecting, Users can toggle it for their chat.
 
-<Steps>
-  <Step title="Open the Authentication app">
-    In Corto, open the Authentication app.
-  </Step>
-  <Step title="Create a new app">
-    Click **Create app** and select **MCP**.
-  </Step>
-  <Step title="Configure settings">
-    | Setting | Description |
-    | --- | --- |
-    | Name | A name shown to users when they approve access. |
-    | MCP server URL | The URL where your MCP server is hosted. |
-    | Scopes | {/* TODO: confirm how scopes or tool permissions are defined */} |
-  </Step>
-  <Step title="Save and copy credentials">
-    Click **Save**, then copy the values shown.
+![Image](/images/image-1.png "Image")
 
-    {/* TODO: List exactly which values are provided (client ID, issuer URL, metadata URL, etc.). */}
-  </Step>
-</Steps>
-
-## Connect your MCP server
-
-{/* TODO: Replace with real configuration or SDK example for the MCP server. */}
-
-```javascript
-// TODO: Replace with real SDK usage
-import { withAuth } from "<mcp-sdk-package>";
-
-export default withAuth(server, {
-  clientId: process.env.AUTH_CLIENT_ID,
-});
-```
-
-## Connect from an MCP client
-
-{/* TODO: Show how users add the server to an MCP client and complete sign-in. */}
-
-## Next steps
-
-<Card title="Manage apps" icon="sliders" href="/auth/manage-apps">
-  Update settings and revoke access.
-</Card>
+![Image](/images/image.png "Image")
