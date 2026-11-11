@@ -1,20 +1,32 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Corto Developer Console",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#311B9B",
+    "light": "#ECE9F5",
+    "dark": "#2F1A75"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/corto.svg",
+    "dark": "/images/corto.svg"
+  },
   "navigation": {
     "pages": [
       {
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "auth/troubleshooting"
+        ]
+      },
+      {
+        "group": "Applications",
+        "pages": [
+          "auth/apps/frontend",
+          "auth/apps/backend",
+          "auth/apps/mcp"
         ]
       }
     ],
@@ -34,8 +46,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/corto.svg",
+    "dark": "/images/corto.svg",
+    "href": "https://www.docorto.ai/"
   },
   "navbar": {
     "links": [
@@ -68,5 +81,11 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "family": "Roboto"
   }
 }
