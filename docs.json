@@ -17,8 +17,7 @@
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart",
-          "auth/troubleshooting"
+          "quickstart"
         ]
       },
       {
@@ -28,7 +27,8 @@
           "auth/apps/backend",
           "auth/apps/mcp"
         ]
-      }
+      },
+      "auth/troubleshooting"
     ],
     "global": {
       "anchors": [
