@@ -17,8 +17,7 @@
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart",
-          "test-accounts"
+          "quickstart"
         ]
       },
       {
@@ -35,6 +34,8 @@
           "for-admins"
         ]
       },
+      "test-accounts",
+      "marketplace",
       "auth/troubleshooting"
     ],
     "global": {
