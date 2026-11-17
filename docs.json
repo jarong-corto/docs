@@ -31,7 +31,8 @@
       {
         "group": "Admin",
         "pages": [
-          "for-admins"
+          "for-admins",
+          "new-admin"
         ]
       },
       "test-accounts",
